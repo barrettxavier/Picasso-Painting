@@ -1,11 +1,13 @@
 * {
   /* background-color: #FFFCF9; */
-  /* border: 1px solid red; */
+  border: 1px solid red;
   font-family: Arial, Helvetica, sans-serif;
   color: #FFFCF9;
 }
 
 body {
+  position: relative;
+  z-index: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,6 +15,35 @@ body {
   height: fit-content;
   background: linear-gradient(to bottom, 
   #FF6978,#FFFCF9);
+
+}
+
+.flower {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.flower img {
+  margin-left: -500px;
+  opacity: 0.05;
+  width: 2000px;
+  margin-top: 3000px;
+  transform: rotate(50deg);
+}
+
+.flower-right {
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+}
+
+.flower-right img {
+  /* margin-left: 2000px; */
+  opacity: 0.05;
+  width: 2000px;
+  margin-top: 500px;
+  transform: rotate(-60deg);
 }
 
 /* Start of navbar */
@@ -116,7 +147,7 @@ body {
   justify-content: center;
   /* background-color: blue; */
   width: 100%;
-  height: fit-content;
+  height: 4300px;
   margin-top: -25%;
 }
 
@@ -128,6 +159,8 @@ body {
 
 .gallery-left {
   /* background-color: purple; */
+  position: relative;
+  z-index: -2;
   width: 30%;
   height: fit-content;
 }
@@ -149,6 +182,8 @@ body {
 }
 
 .gallery-middle p {
+  font-weight: bold;
+  color: black;
   transform: rotate(90deg);
 }
 
@@ -181,7 +216,7 @@ body {
 
 
 
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  /* Styles specific to screens within this width range */
-}
+/* 
+@media (min-width: 440px) and (max-width: 1330px) {
+  
+} */
